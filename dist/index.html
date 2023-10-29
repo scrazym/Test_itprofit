@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itprofit</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left-block">
+        <div class="header__logo">
+          <img src="icons/logo.svg" alt="Логотип" />
+        </div>
+        <nav class="header__links">
+          <a href="#" class="header__link">Пункт 1</a>
+          <a href="#" class="header__link">Пункт 2</a>
+        </nav>
+      </div>
+      <div class="header__right-block">
+        <button data-modal class="btn btn_white">Связаться с нами</button>
+      </div>
+    </header>
+    <aside class="sidepanel">
+      <div class="sidepanel__text"><span>Социальные сети</span></div>
+      <div class="sidepanel__divider"></div>
+      <a href="#" class="sidepanel__icon">
+        <img src="icons/instagram.svg" alt="instagram" />
+      </a>
+      <a href="#" class="sidepanel__icon">
+        <img src="icons/facebook.svg" alt="facebook" />
+      </a>
+    </aside>
+
+    <div class="order">
+      <div class="container">
+        <div class="title">Заказывай пробный день прямо сейчас!</div>
+        <form action="#" class="order__form">
+          <div class="order__input-label">
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="order__input"
+            />
+            <label for="name">Введите не менее 2х символов</label>
+          </div>
+
+          <div class="order__input-label">
+            <input
+              required
+              placeholder="Ваш email"
+              name="email"
+              type="email"
+              class="order__input"
+            />
+            <label for="email">Введите корректный email</label>
+          </div>
+
+          <div class="order__input-label">
+            <input
+              required
+              placeholder="Ваш номер телефона"
+              name="phone"
+              type="phone"
+              class="order__input"
+            />
+            <label for="phone">Введите корректный номер</label>
+          </div>
+          <div class="order__input-label">
+            <textarea
+              required
+              name="text"
+              placeholder="Введите ваше сообщение, не менее 15 символов"
+              class="order__input order__input-text"
+            ></textarea>
+            <label for="text">Введите минимум 15 символов</label>
+          </div>
+
+          <img src="icons/right.svg" alt="right" />
+          <button class="btn btn_dark btn_min">Перезвонить мне</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+      <div class="bgc_y"></div>
+      <div class="container">
+        <div class="promotion__text">
+          <div class="title">Акция для новых клиентов!</div>
+          <div class="promotion__descr">
+            <span>Текст, описание, все что угодно</span> Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Inventore, maxime quasi.
+            Nesciunt, error esse beatae excepturi iste dignissimos delectus ex
+            similique neque? Doloremque magni iusto impedit eveniet hic!
+            Debitis, architecto?<span>20%!</span> <br /><br />
+            Акция закончится 20 мая в 00:00
+          </div>
+        </div>
+        <div class="promotion__timer">
+          <div class="title">Осталось до конца акции:</div>
+          <div class="timer">
+            <div class="timer__block">
+              <span id="days">12</span>
+              дней
+            </div>
+            <div class="timer__block">
+              <span id="hours">20</span>
+              часов
+            </div>
+            <div class="timer__block">
+              <span id="minutes">56</span>
+              минут
+            </div>
+            <div class="timer__block">
+              <span id="seconds">20</span>
+              секунд
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social">
+          <div class="subtitle">Мы в социальных сетях:</div>
+          <a href="#" class="link">instagram</a>
+          <a href="#" class="link">facebook</a>
+        </div>
+        <div class="pepper">
+          <img src="icons/cat.jpg" alt="cat" />
+        </div>
+        <div class="call">
+          <div class="subtitle">Или позвоните нам</div>
+          <a href="#" class="link">+380678341034</a>
+          <a href="#" class="link">+380500941356</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title">
+              Мы свяжемся с вами как можно быстрее!
+            </div>
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="modal__input"
+            />
+            <div class="div">
+              <input
+                required
+                placeholder="Ваш номер телефона"
+                name="phone"
+                type="phone"
+                class="modal__input"
+              />
+            </div>
+            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
