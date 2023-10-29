@@ -60,3 +60,12 @@ a {
   font-size: 36px;
   font-weight: 400;
 }
+
+@media (max-width: 575px) {
+  .btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}

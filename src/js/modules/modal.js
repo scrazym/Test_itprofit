@@ -1,10 +1,11 @@
 export function openModal(modalSelector, modalTimerId) {
   const modal = document.querySelector(modalSelector);
 
-  modal.classList.add("show");
-  modal.classList.remove("hide");
-  document.body.style.overflow = "hidden";
-  console.log(modalTimerId);
+  setTimeout(() => {
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+    document.body.style.overflow = "hidden";
+  }, 1000);
   if (modalTimerId) {
     clearInterval(modalTimerId);
   }

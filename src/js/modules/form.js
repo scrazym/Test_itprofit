@@ -4,10 +4,6 @@ import { isValid } from "./validation";
 
 export function forms(formSelector, modalTimerId) {
   const forms = document.querySelectorAll(formSelector);
-  const inputs = document.querySelectorAll(".order__input-label");
-  console.log(forms);
-  // inputs.forEach((input) => input.classList.add("order__input-error"));
-  inputs.innerHTML;
   const message = {
     loading: "img/form/spinner.svg",
     success: "Thx, we will meet you soon",
@@ -33,10 +29,11 @@ export function forms(formSelector, modalTimerId) {
       const formData = new FormData(form);
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
+      console.log(json, "json");
 
-      postdata("http://localhost:3000/requests", json)
+      postdata("http://localhost:9090/api/registration", json)
         .then((data) => {
-          console.log(data);
+          console.log(data, "cvdsv");
           showThanksModal(message.success);
           statusMessage.remove();
         })
@@ -71,6 +68,6 @@ export function forms(formSelector, modalTimerId) {
       prevModalDialog.classList.add("show");
       prevModalDialog.classList.remove("hide");
       closeModal(".modal");
-    }, 4000000);
+    }, 40000);
   }
 }

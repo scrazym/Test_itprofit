@@ -6,7 +6,6 @@ export const postdata = async (url, data) => {
     },
     body: data,
   });
-
   return await res.json();
 };
 

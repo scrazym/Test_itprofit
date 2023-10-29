@@ -1,3 +1,5 @@
+import IMask from "imask";
+
 export const isValid = () => {
   const form = document.querySelector("form");
   const btnRecall = form.querySelector("button");
@@ -24,7 +26,10 @@ export const isValid = () => {
               (btnRecall.disabled = false));
           break;
         case "phone":
-          !regPhone.test(item.value)
+          const phoneMask = new IMask(item, {
+            mask: "+{7}(000)000-00-00",
+          });
+          !phoneMask.masked.isComplete
             ? (item.parentNode.classList.add("order__input-error"),
               (btnRecall.disabled = true))
             : (item.parentNode.classList.remove("order__input-error"),
