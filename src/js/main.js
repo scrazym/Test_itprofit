@@ -7,9 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     () => openModal(".modal", modalTimerId),
     60000
   );
-
   timer(".timer", "2023-12-12");
-
   modal("[data-modal]", ".modal", modalTimerId);
   forms("form", modalTimerId);
   isValid();
