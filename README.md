@@ -1,6 +1,6 @@
 # Test_itprofit
 
-test landing for Itprofit by Vasili Botsman.
+test landing for Seobility by Vasili Botsman.
 
 <br />
 
